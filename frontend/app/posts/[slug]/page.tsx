@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import type { Metadata, ResolvingMetadata } from "next";
 import { notFound } from "next/navigation";
 import { type PortableTextBlock } from "next-sanity";
@@ -66,13 +67,13 @@ export default async function PostPage(props: Props) {
       <nav className="bg-[#FAF9F6] border-b border-[#D69FA2]/20">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <a href="/" className="font-serif text-2xl font-bold text-[#111111]">
+            <Link href="/" className="font-serif text-2xl font-bold text-[#111111]">
               AllAboutInteriors.ai
-            </a>
+            </Link>
             <div className="flex items-center space-x-8">
-              <a href="/posts" className="text-[#111111] hover:text-[#D69FA2] transition-colors">
+              <Link href="/posts" className="text-[#111111] hover:text-[#D69FA2] transition-colors">
                 Articles
-              </a>
+              </Link>
             </div>
           </div>
         </div>
