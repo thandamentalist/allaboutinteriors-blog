@@ -1,8 +1,8 @@
-import Link from 'next/link'
 import type { Metadata, ResolvingMetadata } from "next";
 import { notFound } from "next/navigation";
 import { type PortableTextBlock } from "next-sanity";
 import { Suspense } from "react";
+import Link from "next/link";
 
 import Avatar from "@/app/components/Avatar";
 import CoverImage from "@/app/components/CoverImage";
